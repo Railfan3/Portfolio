@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Admin - Contact Messages{% endblock %}
+
+{% block content %}
+<div class="content-wrapper">
+    <section style="padding: 3rem 2rem;">
+        <h1 style="color: #2c3e50; margin-bottom: 2rem; text-align: center;">Contact Form Submissions</h1>
+        
+        {% if contacts %}
+            <div style="display: grid; gap: 1.5rem;">
+                {% for contact in contacts %}
+                    <div class="card">
+                        <div style="display: flex; justify-content: between; align-items: start; margin-bottom: 1rem;">
+                            <div style="flex: 1;">
+                                <h3 style="color: #e74c3c; margin-bottom: 0.5rem;">{{ contact.name }}</h3>
+                                <p style="color: #7f8c8d; margin-bottom: 0.5rem;">{{ contact.email }}</p>
+                                <p style="color: #95a5a6; font-size: 0.9rem;">{{ contact.timestamp }}</p>
+                            </div>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px;">
+                            <p style="color: #2c3e50; line-height: 1.6;">{{ contact.message }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div style="text-align: center; padding: 4rem 2rem;">
+                <i class="fas fa-inbox" style="font-size: 4rem; color: #bdc3c7; margin-bottom: 2rem;"></i>
+                <h3 style="color: #7f8c8d; margin-bottom: 1rem;">No Messages Yet</h3>
+                <p style="color: #95a5a6;">Contact form submissions will appear here.</p>
+            </div>
+        {% endif %}
+    </section>
+</div>
+{% endblock %}

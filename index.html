@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content-wrapper">
+    <section class="hero fade-in">
+        <h1>MUKUL CHOUHAN</h1>
+        <p>ECE Engineer | AI & Telecom Innovator | Turning Complex Ideas into Scalable Solutions</p>
+        <a href="{{ url_for('projects') }}" class="btn btn-primary">View My Work</a>
+        <a href="{{ url_for('contact') }}" class="btn">Get In Touch</a>
+    </section>
+
+    <section style="padding: 3rem 2rem;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="card fade-in">
+                <i class="fas fa-code" style="font-size: 3rem; color: #e74c3c; margin-bottom: 1rem;"></i>
+                <h3>💻 Software Development</h3>
+                <p>Proficient in developing robust and efficient applications across multiple domains, from offline railway timetable systems to secure password management tools. Skilled in Python, Java, C/C++, and JavaScript, with experience in Flask, React.js, and PyQt for creating both CLI and GUI solutions. Focused on building maintainable, scalable, and user-friendly software.</p>
+            </div>
+
+            <div class="card fade-in">
+                <i class="fas fa-cogs" style="font-size: 3rem; color: #f39c12; margin-bottom: 1rem;"></i>
+                <h3>🛠️ Engineering Design</h3>
+                <p>Combining analytical thinking with practical problem-solving to design engineering solutions that are both functional and optimized. Experienced in system architecture design, signal processing simulations, and telecom-based projects like 5G D2D communication models and offline telecom billing simulators. Adept at integrating hardware concepts with software systems for real-world applications.</p>
+            </div>
+
+            <div class="card fade-in">
+                <i class="fas fa-lightbulb" style="font-size: 3rem; color: #2ecc71; margin-bottom: 1rem;"></i>
+                <h3>🚀Innovation</h3>
+                <p>Passionate about transforming ideas into impactful projects. From AI-based anomaly detectors to map-based 5G signal strength heatmaps, I thrive on leveraging emerging technologies to create unique, real-world solutions. Skilled in exploring unconventional approaches, optimizing performance, and ensuring that innovation aligns with usability and scalability.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 3rem 2rem; text-align: center;">
+        <h2 style="margin-bottom: 2rem; font-size: 2.5rem;">Ready to Collaborate?</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">I'm always open to discussing new opportunities, innovative projects, and exciting challenges.</p>
+        <a href="{{url_for('contact')}}" class="btn" style="background: white; color: #667eea;">Let's Connect</a>
+    </section>
+</div>
+{% endblock %}

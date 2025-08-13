@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}About - MUKUL CHOUHAN{% endblock %}
+
+{% block content %}
+<div class="content-wrapper">
+    <section style="padding: 3rem 2rem;">
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center;">
+            <div>
+                <img src="{{ url_for('static', filename='images/picyash.jpg') }}" alt="Mukul Chouhan" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <i class="fas fa-user" style="font-size: 8rem; color: white; opacity: 0.8;"></i>
+                </img>
+            </div>
+            <div>
+                <h1 style="color: #2c3e50; margin-bottom: 2rem; font-size: 3rem;">About Me</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 1.5rem; line-height: 1.8;">
+                    I'm a passionate engineering student with a strong foundation in problem-solving and a keen interest in technology innovation. Currently pursuing my degree in <strong>[Electronics and Communication]</strong> at <strong>[Jaipur Engineering College and Research Centre Rajasthan Technical University]</strong>.
+                </p>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; line-height: 1.8;">
+                    My journey in engineering has equipped me with analytical thinking, technical skills, and the ability to work on complex projects. I'm particularly interested in <strong>[Software Development, Telecommunication Systems & AI & Machine Learning]</strong> and always eager to take on new challenges.
+                </p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #f8f9fa; padding: 3rem 2rem;">
+        <h2 style="text-align: center; margin-bottom: 3rem; color: #2c3e50; font-size: 2.5rem;">Skills & Technologies</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+            <div class="card">
+                <h3 style="color: #e74c3c; margin-bottom: 1rem;">Programming Languages</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">Python</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">Java</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">C++</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">JavaScript</span>
+                    
+                </div>
+
+            </div>
+            <div class="card">
+                <h3 style="color: #3498db; margin-bottom: 1rem;">Telecom & Network</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">2G to 6G</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">TCP/IP Protocol</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">FTTH</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">GSM</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">Cybersecurity</span>
+                </div>
+
+            <div class="card">
+                <h3 style="color: #f39c12; margin-bottom: 1rem;">Web Technologies</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">HTML/CSS</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">Flask</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">Bootstrap</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">React</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 style="color: #2ecc71; margin-bottom: 1rem;">Tools & Software</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">Git</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">AutoCAD</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">MATLAB</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">VS Code</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3 style="color: #9b59b6; margin-bottom: 1rem;">Soft Skills</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">Teamwork</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">Problem Solving</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">Communication</span>
+                    <span style="background: #ecf0f1; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">Adaptability</span>
+                </div>
+        </div>
+    </section>
+
+    <section style="padding: 3rem 2rem;">
+        <h2 style="text-align: center; margin-bottom: 3rem; color: #2c3e50; font-size: 2.5rem;">Education & Experience</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="card" style="margin-bottom: 2rem;">
+                <h3 style="color: #e74c3c;">Bachelor of Engineering - [Electronics and Communication]</h3>
+                <p style="color: #7f8c8d; margin-bottom: 1rem;">[Jaipur Engineering College and Research Centre] | [2023] - [2027]</p>
+                <p>Currently pursuing my engineering degree with focus on [Software development, Communication system and AI]. Relevant coursework includes Data Structures, Algorithms, OOP's Engineering Mathematics, and many more.</p>
+            </div>
+
+            <div class="card">
+                <h3 style="color: #f39c12;">Internship/Project Experience</h3>
+                <p style="color: #7f8c8d; margin-bottom: 1rem;">[BHARAT SANCHAR NIGAM LIMITED] | [6 Weeks]</p>
+                <p>Focus: 5G & Emerging Telecom Technologies
+
+Gained hands-on exposure to 5G network architecture, spectrum allocation, and core components.
+
+Studied advancements in 6G research trends, device-to-device communication, and network optimization techniques.
+
+Analyzed real-world telecom infrastructure, including base stations, optical fiber networks, and switching systems.
+
+Worked on a mini-project simulating signal anomaly detection and telecom billing logic using Python.
+
+Developed a strong understanding of telecommunication protocols, signal flow, and network security considerations.</p>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %}Projects - Your Name{% endblock %}
+
+{% block content %}
+<div class="content-wrapper">
+    <section style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 4rem 2rem; text-align: center;">
+        <h1 style="font-size: 3rem; margin-bottom: 1rem;">My Projects</h1>
+        <p style="font-size: 1.3rem; opacity: 0.9;">Showcasing my technical skills through innovative solutions</p>
+    </section>
+
+    <section style="padding: 3rem 2rem;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+            
+            <!-- Project 1 -->
+            <div class="card">
+                <div style="height: 200px; background: linear-gradient(135deg, #ff6b6b, #ffa726); border-radius: 10px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-robot" style="font-size: 4rem; color: white; opacity: 0.8;"></i>
+                </div>
+                <h3 style="color: #2c3e50; margin-bottom: 1rem;">🔐 PassForge - Secure Password Manager</h3>
+                <p style="margin-bottom: 1.5rem; color: #7f8c8d;">A robust, Python-based password management application focused on security, privacy, and ease of use.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+                    <span style="background: #e74c3c; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">Python</span>
+                    <span style="background: #f39c12; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">Tkinter</span>
+                    <span style="background: #2ecc71; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">SQLite</span>
+                    <span style="background: #3498db; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">Cryptography (AES-256)</span>
+                </div>
+                <div>
+                    
+                    <a href="https://github.com/Railfan3/PaasForge" class="btn btn-primary" style="font-size: 0.9rem; padding: 8px 20px;">Github</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card">
+                <div style="height: 200px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 10px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-chart-line" style="font-size: 4rem; color: white; opacity: 0.8;"></i>
+                </div>
+                <h3 style="color: #2c3e50; margin-bottom: 1rem;">🛡️ SCANFORGE - Vulnerability Scanner</h3>
+                <p style="margin-bottom: 1.5rem; color: #7f8c8d;">A security scanning tool designed to detect and report vulnerabilities like XSS, SQL Injection, and CSRF in web applications.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+                    <span style="background: #3498db; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">Python</span>
+                    <span style="background: #e74c3c; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">Requests</span>
+                    <span style="background: #f39c12; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">Regex</span>
+                    <span style="background: #2ecc71; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">CLI</span>
+                </div>
+                <div>
+                    
+                    <a href="https://github.com/Railfan3/SCANFORGE" class="btn btn-primary" style="font-size: 0.9rem; padding: 8px 20px;">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="card">
+                <div style="height: 200px; background: linear-gradient(135deg, #2ecc71, #27ae60); border-radius: 10px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-mobile-alt" style="font-size: 4rem; color: white; opacity: 0.8;"></i>
+                </div>
+                <h3 style="color: #2c3e50; margin-bottom: 1rem;">🚆 RAIL'oCLOCK - Offline Indian Train Timetable Viewer</h3>
+                <p style="margin-bottom: 1.5rem; color: #7f8c8d;">Created an offline railway timetable app with source-to-destination search and optimized for fast data retrieval without internet dependency.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+                    <span style="background: #9b59b6; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">Python</span>
+                    <span style="background: #3498db; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">Tkinter</span>
+                    <span style="background: #e67e22; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">JSON</span>
+                </div>
+                <div>
+                    
+                    <a href="https://github.com/Railfan3/RAIL-oCLOCK" class="btn btn-primary" style="font-size: 0.9rem; padding: 8px 20px;">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="card">
+                <div style="height: 200px; background: linear-gradient(135deg, #f39c12, #e67e22); border-radius: 10px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-brain" style="font-size: 4rem; color: white; opacity: 0.8;"></i>
+                </div>
+                <h3 style="color: #2c3e50; margin-bottom: 1rem;">🤖 Duronto - Personal AI Assistant</h3>
+                <p style="margin-bottom: 1.5rem; color: #7f8c8d;">Developed a multifunctional personal AI assistant capable of voice and text-based interaction.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+                    <span style="background: #2ecc71; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">Python</span>
+                    <span style="background: #3498db; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">SpeechRecognition</span>
+                    <span style="background: #e74c3c; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">Pyttsx3</span>
+                    <span style="background: #9b59b6; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">OpenAI API</span>
+                    <span style="background: #f39c12; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">Tkinter</span>
+                </div>
+                
+            </div>
+
+            <!-- Academic Projects Card -->
+            <div class="card" style="grid-column: span 2; background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));">
+                <h3 style="color: #2c3e50; margin-bottom: 1.5rem; text-align: center;">Academic & Research Projects</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div>
+                        <h4 style="color: #e74c3c; margin-bottom: 0.5rem;">Internship Project</h4>
+                        <p style="color: #7f8c8d; font-size: 0.9rem;">Currently working on [5G Signal Strength Heatmap Web App] - focusing on innovative solutions for [to visualize 5G signal strength distribution across Udaipur].</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #f39c12; margin-bottom: 0.5rem;">Research Report</h4>
+                        <p style="color: #7f8c8d; font-size: 0.9rem;">Published research report on [BSNL Training] during internship at [Bharat Sanchar Nigam Limited] with focus on [Communication Technology and 2G to 6G].</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #f8f9fa; padding: 3rem 2rem; text-align: center;">
+        <h2 style="color: #2c3e50; margin-bottom: 2rem; font-size: 2.5rem;">Want to Collaborate?</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #7f8c8d;">I'm always interested in working on exciting projects and learning new technologies.</p>
+        <a href="{{url_for('contact')}}" class="btn btn-primary">Get In Touch</a>
+    </section>
+</div>
+{% endblock %}

@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - MUKUL CHOUHAN{% endblock %}
+
+{% block content %}
+<div class="content-wrapper">
+    <section style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 4rem 2rem; text-align: center;">
+        <h1 style="font-size: 3rem; margin-bottom: 1rem;">Get In Touch</h1>
+        <p style="font-size: 1.3rem; opacity: 0.9;">Let's discuss opportunities, projects, or just connect!</p>
+    </section>
+
+    <section style="padding: 3rem 2rem;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1000px; margin: 0 auto;">
+            <!-- Contact Form -->
+            <div>
+                <h2 style="color: #2c3e50; margin-bottom: 2rem;">Send Me a Message</h2>
+                <form method="POST" action="{{ url_for('contact') }}">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, opportunity, or just say hello!" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane" style="margin-right: 0.5rem;"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h2 style="color: #2c3e50; margin-bottom: 2rem;">Contact Information</h2>
+                
+                <div style="margin-bottom: 2rem;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #e74c3c, #c0392b); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                            <i class="fas fa-envelope" style="color: white; font-size: 1.5rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">Email</h4>
+                            <p style="color: #7f8c8d;">railfanmy9@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #f39c12, #e67e22); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                            <i class="fas fa-phone" style="color: white; font-size: 1.5rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">Phone</h4>
+                            <p style="color: #7f8c8d;">+91 8949524550</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #2ecc71, #27ae60); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                            <i class="fas fa-map-marker-alt" style="color: white; font-size: 1.5rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">Location</h4>
+                            <p style="color: #7f8c8d;">Jaipur, Rajasthan, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                    <h3 style="color: #2c3e50; margin-bottom: 1.5rem;">Connect With Me</h3>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="https://www.linkedin.com/in/mukul-chouhan-596291295/" style="display: flex; align-items: center; background: #0077b5; color: white; padding: 0.8rem 1.2rem; border-radius: 50px; text-decoration: none; transition: all 0.3s ease;">
+                            <i class="fab fa-linkedin" style="margin-right: 0.5rem;"></i>
+                            LinkedIn
+
+                        </a>
+                        <a href="https://github.com/Railfan3" style="display: flex; align-items: center; background: #333; color: white; padding: 0.8rem 1.2rem; border-radius: 50px; text-decoration: none; transition: all 0.3s ease;">
+                            <i class="fab fa-github" style="margin-right: 0.5rem;"></i>
+                            GitHub
+                        </a>
+                        <a href="https://x.com/RailFan39" style="display: flex; align-items: center; background: linear-gradient(135deg, #e1306c, #fd1d1d); color: white; padding: 0.8rem 1.2rem; border-radius: 50px; text-decoration: none; transition: all 0.3s ease;">
+                            <i class="fab fa-twitter" style="margin-right: 0.5rem;"></i>
+                            Twitter
+                       
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 2rem; border-radius: 15px; margin-top: 2rem; text-align: center;">
+                    <h3 style="margin-bottom: 1rem;">Quick Response</h3>
+                    <p style="opacity: 0.9; margin-bottom: 1rem;">I typically respond within 24 hours!</p>
+                    <i class="fas fa-clock" style="font-size: 2rem; opacity: 0.7;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #f8f9fa; padding: 2rem;">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h3 style="color: #2c3e50; margin-bottom: 1rem;">Open to Opportunities</h3>
+            <p style="color: #7f8c8d; font-size: 1.1rem;">I'm currently looking for internships, part-time opportunities, and exciting projects to work on. Whether it's a startup idea, research collaboration, or just networking, I'd love to hear from you!</p>
+        </div>
+    </section>
+</div>
+
+<style>
+    @media (max-width: 768px) {
+        section div[style*="grid-template-columns: 1fr 1fr"] {
+            display: block !important;
+        }
+        
+        section div[style*="grid-template-columns: 1fr 1fr"] > div:first-child {
+            margin-bottom: 3rem;
+        }
+    }
+</style>
+{% endblock %}
